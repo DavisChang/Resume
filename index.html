@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Measure Screen Size</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="web development tools, frontend, front-end, davis_chang">
+<meta name="description" content="Meta tags can have a larger impact on SEO and your website than you may think. Find out more about the importance of meta tags and learn how to write meta tags that max out your SEO.">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7096934218329865" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YGT8EVR31B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YGT8EVR31B');
+</script>
+<script>
+  (function() {
+    document.addEventListener('DOMContentLoaded', () => {
+      function getData () {
+        var H = window.innerHeight;
+        var W = window.innerWidth;
+
+        var widthNode = document.getElementById("width");
+        widthNode.innerHTML = 'Width: ' + W + ' pixel';
+
+        var heightNode = document.getElementById("height");
+        heightNode.innerHTML = 'Height: ' + H + ' pixel';
+
+        console.log('H: ', H);
+        console.log('W: ', W);
+      };
+
+      getData();
+
+      window.onresize = function(event) {
+        getData();
+      };
+
+    }, false);
+  
+  })();
+</script>
+<style>
+  body {
+    margin: 0;
+  }
+
+  #width {
+    background-color: #b0e0e6;
+    text-align: left;
+    position: absolute;
+    width: 100vw;
+  }
+
+  #height {
+    background-color: #03a9f4;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    height: 100vh;
+    writing-mode: tb-rl;
+  }
+</style>
+</head>
+<body>
+  <div id="width"></div>
+
+  <div id="height"></div>
+</body>
+</html>
